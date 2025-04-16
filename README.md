@@ -1,7 +1,7 @@
 # Simulador de Mecánica de Fluidos
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/logo.png" alt="Simulador de Mecánica de Fluidos Logo" width="200"/>
+  <img src="https://github.com/pjvalverde/simulador-mecanica-fluidos/raw/main/public/assets/images/logo.png" alt="Simulador de Mecánica de Fluidos Logo" width="200"/>
   <br/>
   <p><strong>Una herramienta educativa interactiva para la enseñanza y aprendizaje de mecánica de fluidos</strong></p>
   <a href="#características">Características</a> •
@@ -34,16 +34,16 @@ Desarrollada con React y SVG animado, esta herramienta educativa ofrece una expe
 ## Visualizaciones
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/screenshots/manometro.png" alt="Simulación de Manómetro" width="400"/>
+  <img src="https://github.com/pjvalverde/simulador-mecanica-fluidos/raw/main/public/assets/images/screenshots/manometro.png" alt="Simulación de Manómetro" width="400"/>
   <p><em>Simulación de Manómetro de Tubo en U</em></p>
   <br/>
-  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/screenshots/decantador-gravedad.png" alt="Simulación de Decantador por Gravedad" width="400"/>
+  <img src="https://github.com/pjvalverde/simulador-mecanica-fluidos/raw/main/public/assets/images/screenshots/decantador-gravedad.png" alt="Simulación de Decantador por Gravedad" width="400"/>
   <p><em>Simulación de Decantador por Gravedad</em></p>
   <br/>
-  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/screenshots/decantador-centrifugo.png" alt="Simulación de Decantador Centrífugo" width="400"/>
+  <img src="https://github.com/pjvalverde/simulador-mecanica-fluidos/raw/main/public/assets/images/screenshots/decantador-centrifugo.png" alt="Simulación de Decantador Centrífugo" width="400"/>
   <p><em>Simulación de Decantador Centrífugo</em></p>
   <br/>
-  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/screenshots/bomba-bernoulli.png" alt="Simulación de Trabajo de Bomba" width="400"/>
+  <img src="https://github.com/pjvalverde/simulador-mecanica-fluidos/raw/main/public/assets/images/screenshots/bomba-bernoulli.png" alt="Simulación de Trabajo de Bomba" width="400"/>
   <p><em>Simulación de Trabajo de Bomba según la ecuación de Bernoulli</em></p>
 </div>
 
@@ -58,7 +58,7 @@ Desarrollada con React y SVG animado, esta herramienta educativa ofrece una expe
 
 1. Clone el repositorio:
    ```bash
-   git clone https://github.com/username/fluid-mechanics-simulator.git
+   git clone https://github.com/pjvalverde/simulador-mecanica-fluidos.git
    cd fluid-mechanics-simulator
    ```
 
@@ -177,12 +177,12 @@ Este proyecto está bajo la licencia MIT. Consulte el archivo `LICENSE` para má
 
 Para preguntas, sugerencias o colaboraciones, por favor contacte:
 
-- **Desarrollador Principal**: [Nombre del Desarrollador](mailto:email@ejemplo.com)
-- **Institución**: [Nombre de la Institución](https://www.institucion.edu)
+- **Desarrollador Principal**: [Pablo Valverde](mailto:pblvalverde@gmail.com)
+- **Institución**: [PUCE](https://www.puce.edu.ec)
 
 ---
 
 <div align="center">
   <p>Desarrollado con ❤️ para la enseñanza de la mecánica de fluidos</p>
-  <p>© 2025 - [Nombre de la Institución o Desarrollador]</p>
+  <p>© 2025 - [PUCE]</p>
 </div>
