@@ -184,5 +184,5 @@ Para preguntas, sugerencias o colaboraciones, por favor contacte:
 
 <div align="center">
   <p>Desarrollado con ❤️ para la enseñanza de la mecánica de fluidos</p>
-  <p>© 2025 - [PUCE]</p>
+  <p>© 2025 - PUCE</p>
 </div>
