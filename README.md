@@ -1,3 +1,51 @@
+# Simulador de Mecánica de Fluidos
+
+Un simulador interactivo para visualizar y comprender conceptos de mecánica de fluidos, incluyendo:
+
+- Trabajo de bombas
+- Ecuación de Bernoulli
+- Decantadores centrífugos y de gravedad
+- Y más...
+
+## Demo
+
+Puedes ver la aplicación en vivo aquí: [https://pjvalverde.github.io/simulador-mecanica-fluidos](https://pjvalverde.github.io/simulador-mecanica-fluidos)
+
+## Características
+
+- Simulaciones interactivas con elementos visuales
+- Parámetros ajustables en tiempo real
+- Cálculos físicos precisos
+- Diseño responsivo con Tailwind CSS
+
+## Tecnologías utilizadas
+
+- React
+- Tailwind CSS
+- JavaScript
+
+## Desarrollo
+
+Para ejecutar este proyecto localmente:
+
+```bash
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm start
+
+# Construir para producción
+npm run build
+
+# Desplegar en GitHub Pages
+npm run deploy
+```
+
+## Licencia
+
+MIT
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
