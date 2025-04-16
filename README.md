@@ -1,118 +1,188 @@
 # Simulador de Mecánica de Fluidos
 
-Un simulador interactivo para visualizar y comprender conceptos de mecánica de fluidos, incluyendo:
+<div align="center">
+  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/logo.png" alt="Simulador de Mecánica de Fluidos Logo" width="200"/>
+  <br/>
+  <p><strong>Una herramienta educativa interactiva para la enseñanza y aprendizaje de mecánica de fluidos</strong></p>
+  <a href="#características">Características</a> •
+  <a href="#visualizaciones">Visualizaciones</a> •
+  <a href="#instalación">Instalación</a> •
+  <a href="#uso">Uso</a> •
+  <a href="#estructura-del-proyecto">Estructura</a> •
+  <a href="#tecnologías">Tecnologías</a>
+</div>
 
-- Trabajo de bombas
-- Ecuación de Bernoulli
-- Decantadores centrífugos y de gravedad
-- Y más...
+## Descripción
 
-## Demo
+El Simulador de Mecánica de Fluidos es una aplicación web interactiva diseñada para facilitar la comprensión de conceptos fundamentales en la mecánica de fluidos. La aplicación proporciona simulaciones visuales detalladas de manómetros, decantadores por gravedad, decantadores centrífugos y sistemas de bombeo, permitiendo a estudiantes y profesionales explorar los principios físicos y variables de diseño de manera práctica.
 
-Puedes ver la aplicación en vivo aquí: [https://pjvalverde.github.io/simulador-mecanica-fluidos](https://pjvalverde.github.io/simulador-mecanica-fluidos)
+Desarrollada con React y SVG animado, esta herramienta educativa ofrece una experiencia interactiva que complementa el estudio teórico, facilitando la visualización de fenómenos complejos y la comprensión de ecuaciones y principios de la mecánica de fluidos.
 
 ## Características
 
-- Simulaciones interactivas con elementos visuales
-- Parámetros ajustables en tiempo real
-- Cálculos físicos precisos
-- Diseño responsivo con Tailwind CSS
+- **Interfaz Unificada**: Navegación intuitiva entre las diferentes simulaciones desde un panel central.
+- **Simulaciones Interactivas**:
+  - **Manómetros**: Visualización de la relación entre presión y altura en manómetros de tubo en U.
+  - **Decantadores por Gravedad**: Simulación del proceso de separación de líquidos inmiscibles por acción gravitatoria.
+  - **Decantadores Centrífugos**: Modelado de la separación de líquidos mediante fuerza centrífuga.
+  - **Trabajo de Bomba**: Análisis del trabajo y potencia en sistemas de bombeo según la ecuación de Bernoulli.
+- **Controles Paramétricos**: Ajuste en tiempo real de variables como densidades, dimensiones, velocidades y eficiencias.
+- **Visualización Dinámica**: Animaciones que representan el comportamiento de los fluidos bajo diferentes condiciones.
+- **Cálculos Automáticos**: Resultados numéricos instantáneos basados en ecuaciones fundamentales de la mecánica de fluidos.
+- **Material Didáctico**: Guías tutoriales complementarias con ejercicios resueltos.
 
-## Tecnologías utilizadas
+## Visualizaciones
 
-- React
-- Tailwind CSS
-- JavaScript
+<div align="center">
+  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/screenshots/manometro.png" alt="Simulación de Manómetro" width="400"/>
+  <p><em>Simulación de Manómetro de Tubo en U</em></p>
+  <br/>
+  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/screenshots/decantador-gravedad.png" alt="Simulación de Decantador por Gravedad" width="400"/>
+  <p><em>Simulación de Decantador por Gravedad</em></p>
+  <br/>
+  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/screenshots/decantador-centrifugo.png" alt="Simulación de Decantador Centrífugo" width="400"/>
+  <p><em>Simulación de Decantador Centrífugo</em></p>
+  <br/>
+  <img src="https://raw.githubusercontent.com/username/fluid-mechanics-simulator/main/public/assets/images/screenshots/bomba-bernoulli.png" alt="Simulación de Trabajo de Bomba" width="400"/>
+  <p><em>Simulación de Trabajo de Bomba según la ecuación de Bernoulli</em></p>
+</div>
 
-## Desarrollo
+## Instalación
 
-Para ejecutar este proyecto localmente:
+### Requisitos Previos
 
-```bash
-# Instalar dependencias
-npm install
+- Node.js (v14.0.0 o superior)
+- npm (v6.0.0 o superior)
 
-# Iniciar servidor de desarrollo
-npm start
+### Pasos de Instalación
 
-# Construir para producción
-npm run build
+1. Clone el repositorio:
+   ```bash
+   git clone https://github.com/username/fluid-mechanics-simulator.git
+   cd fluid-mechanics-simulator
+   ```
 
-# Desplegar en GitHub Pages
-npm run deploy
+2. Instale las dependencias:
+   ```bash
+   npm install
+   ```
+
+3. Inicie el servidor de desarrollo:
+   ```bash
+   npm start
+   ```
+
+4. Acceda a la aplicación en su navegador:
+   ```
+   http://localhost:3000
+   ```
+
+## Uso
+
+### Navegación por el Simulador
+
+1. En la página principal, seleccione la simulación que desea explorar haciendo clic en el botón correspondiente.
+2. Cada simulación cuenta con un panel de control donde puede ajustar los parámetros relevantes.
+3. La visualización se actualiza en tiempo real conforme modifica los parámetros.
+4. Utilice el botón "Iniciar Simulación" para activar las animaciones del flujo de fluidos.
+
+### Guías de Aprendizaje
+
+- Consulte las guías tutoriales complementarias para profundizar en los conceptos teóricos:
+  - **Guía Tutorial: Manómetros y Decantadores**: Principios físicos y métodos de cálculo.
+  - **Tutorial de Ejercicios Resueltos: Trabajo de Bomba**: Problemas prácticos resueltos paso a paso.
+
+## Estructura del Proyecto
+
 ```
+simulador-mecanica-fluidos/
+│
+├── public/
+│   ├── index.html
+│   └── assets/
+│       └── images/
+│
+├── src/
+│   ├── components/
+│   │   ├── Manometro/
+│   │   │   ├── ManometroSimulacion.jsx
+│   │   │   └── ManometroHelper.js
+│   │   │
+│   │   ├── DecantadorGravedad/
+│   │   │   ├── DecantadorGravedadSimulacion.jsx
+│   │   │   └── DecantadorGravedadHelper.js
+│   │   │
+│   │   ├── DecantadorCentrifugo/
+│   │   │   ├── DecantadorCentrifugoSimulacion.jsx
+│   │   │   └── DecantadorCentrifugoHelper.js
+│   │   │
+│   │   └── TrabajoBomba/
+│   │       ├── BombaSimulacion.jsx
+│   │       └── BombaHelper.js
+│   │
+│   ├── utils/
+│   │   ├── fluidMechanics.js
+│   │   └── constants.js
+│   │
+│   ├── App.jsx
+│   └── index.js
+│
+├── docs/
+│   ├── guia-manometros-decantadores.md
+│   └── tutorial-trabajo-bomba.md
+│
+├── package.json
+└── README.md
+```
+
+## Tecnologías
+
+- **React**: Framework de JavaScript para la interfaz de usuario
+- **SVG**: Gráficos vectoriales para las visualizaciones dinámicas
+- **TailwindCSS**: Framework de CSS para el diseño de la interfaz
+- **JavaScript ES6+**: Funcionalidades modernas de JavaScript
+- **HTML5**: Estructura semántica del documento
+
+## Implementación en Entornos Educativos
+
+### Para Profesores
+
+1. **Integración en LMS**: La aplicación puede embeberse en sistemas de gestión de aprendizaje mediante iframe.
+2. **Material Complementario**: Utilice las guías tutoriales como material de apoyo para sus clases.
+3. **Ejercicios Prácticos**: Asigne problemas específicos que los estudiantes puedan resolver utilizando el simulador.
+
+### Para Estudiantes
+
+1. **Estudio Autónomo**: Explore los conceptos a su propio ritmo, experimentando con diferentes parámetros.
+2. **Verificación de Cálculos**: Compruebe sus soluciones manuales con las predicciones del simulador.
+3. **Comprensión Visual**: Visualice conceptos abstractos para mejorar su entendimiento teórico.
+
+## Contribución
+
+Las contribuciones son bienvenidas y apreciadas. Para contribuir:
+
+1. Haga un fork del proyecto
+2. Cree una rama para su característica (`git checkout -b feature/nueva-caracteristica`)
+3. Realice sus cambios y haga commit (`git commit -m 'Añadir nueva característica'`)
+4. Haga push a la rama (`git push origin feature/nueva-caracteristica`)
+5. Abra un Pull Request
+
+Para contribuciones importantes, por favor abra primero un issue para discutir los cambios propuestos.
 
 ## Licencia
 
-MIT
+Este proyecto está bajo la licencia MIT. Consulte el archivo `LICENSE` para más detalles.
 
-# Getting Started with Create React App
+## Contacto
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para preguntas, sugerencias o colaboraciones, por favor contacte:
 
-## Available Scripts
+- **Desarrollador Principal**: [Nombre del Desarrollador](mailto:email@ejemplo.com)
+- **Institución**: [Nombre de la Institución](https://www.institucion.edu)
 
-In the project directory, you can run:
+---
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  <p>Desarrollado con ❤️ para la enseñanza de la mecánica de fluidos</p>
+  <p>© 2025 - [Nombre de la Institución o Desarrollador]</p>
+</div>
