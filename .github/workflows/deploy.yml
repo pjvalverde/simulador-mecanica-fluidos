@@ -5,22 +5,8 @@ on:
     branches:
       - main
 
-# Define permisos explícitos para el token GITHUB_TOKEN
-permissions:
-  contents: write  # Para permitir la actualización del repositorio
-  pages: write     # Para permitir escribir en GitHub Pages
-  id-token: write  # Para manejar la autenticación de implementación
-
-# Allow only one concurrent deployment
-concurrency:
-  group: "pages"
-  cancel-in-progress: true
-
 jobs:
-  deploy:
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+  build-and-deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -38,14 +24,9 @@ jobs:
       - name: Build
         run: npm run build
         
-      - name: Setup Pages
-        uses: actions/configure-pages@v3
-        
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
-        with:
-          path: './build'
-          
       - name: Deploy to GitHub Pages
-        id: deployment
-        uses: actions/deploy-pages@v2 
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: ./build
+          branch: gh-pages
+          token: ${{ secrets.GITHUB_TOKEN }} 
