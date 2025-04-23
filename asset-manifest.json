@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/simulador-mecanica-fluidos/static/css/main.689802bb.css",
-    "main.js": "/simulador-mecanica-fluidos/static/js/main.78226dc6.js",
+    "main.js": "/simulador-mecanica-fluidos/static/js/main.9cb95f1e.js",
     "index.html": "/simulador-mecanica-fluidos/index.html",
     "main.689802bb.css.map": "/simulador-mecanica-fluidos/static/css/main.689802bb.css.map",
-    "main.78226dc6.js.map": "/simulador-mecanica-fluidos/static/js/main.78226dc6.js.map"
+    "main.9cb95f1e.js.map": "/simulador-mecanica-fluidos/static/js/main.9cb95f1e.js.map"
   },
   "entrypoints": [
     "static/css/main.689802bb.css",
-    "static/js/main.78226dc6.js"
+    "static/js/main.9cb95f1e.js"
   ]
 }
